@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Day-1</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>CSS Interview Questions Day-1</h1>
+    </nav>
+    <div class="box">
+        <h2>Q.Explain inline , internal and external stylesheet</h2>
+        <ul>
+        <li><span>Inline CSS:</span> Requires the style attribute placed inside an HTML element.</li>
+        <li><span>Internal CSS:</span> Requires the &lt;element &gt;style placed inside the head section of an HTML file.</li>            
+        <li><span>External CSS:</span> Requires the &lt;link&gt; element placed inside the head section of an HTML file.</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>Q.What is css box model?</h2>
+        <ul>
+            <li>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</li>
+            <li>The image below illustrates the box model:</li>
+            <li type="none"><img src="./css-box-model.jpg" alt="" width="350px"></li>
+            <li>
+                <ul>
+                    <li><span>Content -</span> The content of the box, where text and images appear</li>
+                    <li><span>Padding -</span> Clears an area around the content. The padding is transparent</li>
+                    <li><span>Border -</span> A border that goes around the padding and content</li>
+                    <li><span>Margin -</span> Clears an area outside the border. The margin is transparent</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>Q.What is the difference between padding and margin?</h2>
+        <ul>
+            <li>In CSS, a margin is the space around an element’s border, while padding is the space between an element’s border and the element’s content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element.</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>Q.Difference between flex row and column</h2>
+    </div>
+    <div class="box">
+        <h2>Q.Justify-content allows you to do what?</h2>
+        <ul>
+            <li>The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>Q.Difference between absolute and relative positioning</h2>
+        <ul>
+            <li><span>position: relative </span> places an element relative to its current position without changing the layout around it, whereas </li>
+            <li><span>position: absolute</span> places an element relative to its parent's position and changing the layout around it.</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>Q.What is the z-index in CSS?</h2>
+        <ul>
+            <li>The z-index property specifies the stack order of an element.</li>
+            <li>An element with greater stack order is always in front of an element with a lower stack order.</li>
+        </ul>
+        <li type="none"><span>Note:- </span>z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).</li>
+    </div>
+
+    
+</body>
+</html>

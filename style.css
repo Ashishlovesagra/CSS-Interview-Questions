@@ -1,0 +1,28 @@
+/* Day-1 */
+body{
+    background-color: aqua;
+}
+.box ul li{
+    font-size: 20px;
+}
+h2{
+    font-size: 30px;
+}
+span{
+   font-size: 25px;
+   font-weight: 600;
+}
+.box{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.navbar{
+    border: 2px solid red;
+    text-align: center;
+    color: aqua;
+    background-color: blue;
+}
+h1{
+    font-size: 40px;
+}
