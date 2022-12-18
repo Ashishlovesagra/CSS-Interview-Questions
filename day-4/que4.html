@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-4 Que-4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        width: 100%;
+        height: 80px;
+      }
+      .masterhead {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .left {
+        width: 50%;
+        height: 500px;
+      }
+      .right {
+        width: 50%;
+        height: 500px;
+        position: relative;
+        top: 10%;
+        background-image: url(./bg-image.jpg);
+        background-size: cover;
+      }
+      .box {
+        width: 98%;
+        height: 380px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        top: 20%;
+      }
+      .big {
+        font-size: 45px;
+      }
+      .red {
+        color: red;
+      }
+      .small {
+        font-size: 25px;
+        position: relative;
+      }
+      .btn {
+        width: 25%;
+        height: 40px;
+        background-color: #00a5ec;
+        border: 2px solid #00a5ec;
+        border-radius: 5px;
+        position: relative;
+        left: -20%;
+      }
+      .btn-in {
+        font-size: 20px;
+        color: white;
+      }
+      @media screen and (min-width:250px) and (max-width:500px) {
+        .masterhead{
+            width: 100%;
+            display: grid;
+        }
+        .big{
+            font-size: 29px;
+        }
+        .small{
+            font-size: 25px;
+            margin-left: 40px;
+        }
+        .right{
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: 10%;
+            background-image: url(./bg-image.jpg);
+            background-size: cover;
+        }
+        .left{
+            position: absolute;
+            top: 30%;
+            width: 100%;
+        }
+        .btn{
+            width: 150px;
+            margin-left: 50px;
+            background-color:aqua;
+            border: 5px solid aqua;
+        }
+        .btn-in{
+            color: black;
+        }
+      }
+      @media screen and (min-width:500px) and (max-width:1020px){
+        .masterhead{
+            width: 100%;
+            display: grid;
+        }
+        .big{
+            font-size: 35px;
+        }
+        .small{
+            font-size: 30px;
+            margin-left: 80px;
+        }
+        .right{
+            width: 100%;
+            height: 320px;
+            position: absolute;
+            top: 10%;
+            background-image: url(./bg-image.jpg);
+            background-size: cover;
+        }
+        .left{
+            position: absolute;
+            top: 45%;
+            width: 100%;
+        }
+        .btn{
+            width: 150px;
+            margin-left: 50px;
+            background-color:yellow;
+            border: 5px solid yellow;
+        }
+        .btn-in{
+            color:red;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="nav"></nav>
+    <section class="masterhead">
+      <div class="left">
+        <div class="box">
+          <p class="big">
+            <span class="red">Start your journey of success</span> <br />
+            Personalised Coding Programs <br />
+            to make coding easier for you
+          </p>
+          <br />
+          <p class="small">Want to know how PrepBytes can help you?</p>
+          <br />
+          <button class="btn"><span class="btn-in">Know More</span></button>
+        </div>
+      </div>
+      <div class="right">
+        <!-- <img src="./bg-image.jpg" alt="" width="750px" /> -->
+      </div>
+    </section>
+  </body>
+</html>
