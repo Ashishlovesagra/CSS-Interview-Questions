@@ -15,6 +15,9 @@ body {
   width: 49.5%;
   height: 100px;
 }
+.bg{
+  background-color: aqua;
+}
 .logo img {
   width: 90px;
   border-radius: 50%;
