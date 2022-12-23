@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Day-5</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>CSS Interview Questions Day-5</h1>
+    </nav>
+    <div class="box">
+      <h2>Q.Show implementation of transition</h2>
+      <ul>
+        <li>
+          The transition-property specifies the CSS properties to which you want
+          the transition effect. Only these CSS properties are animated
+        </li>
+        <li>
+          <pre>
+          <span>Code:-</span>
+          div {
+            width: 150px;
+            height: 150px;
+            background: purple;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1ms;
+          }
+          body {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+          }
+          div:hover {
+            width: 400px;
+          }
+        </pre
+          >
+        </li>
+        <li><a href="./day-5/que1.html">Click Here to see Output</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Q.Show implementation of transform</h2>
+      <ul>
+        <li>
+          CSS transforms are a collection of functions that allow to shape
+          elements in particular ways:
+        </li>
+        <ul>
+          <li>
+            <span>translate:</span> moves the element along up to 3 axis (x, y
+            and z)
+          </li>
+          <li><span>rotate:</span> moves the element around a central point</li>
+          <li><span>scale:</span> resizes the element</li>
+          <li><span>skew:</span> distorts the element</li>
+        </ul>
+        <li>
+          <pre>
+          <span>HTML Code:-</span>
+          &lt;h1&gt;The transform Property&lt;/h1&gt;
+
+          &lt;h2&gt;transform: rotate(20deg):&lt;/h2&gt;
+          &lt;div class="a"&gt;Hello World!&lt;/div&gt;
+          &lt;br /&gt;
+
+          &lt;h2&gt;transform: skewY(20deg):&lt;/h2&gt;
+          &lt;div class="b">Hello World!&lt;/div&gt;
+          &lt;br /&gt;
+
+          &lt;h2&gt;transform: scaleY(1.5):&lt;/h2&gt;
+          &lt;div class="c">Hello World!&lt;/div&gt;
+
+          <span>CSS Code:-</span>
+          div.a {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            -ms-transform: rotate(20deg); 
+            transform: rotate(20deg);
+          }
+    
+          div.b {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            -ms-transform: skewY(20deg);
+            transform: skewY(20deg);
+          }
+    
+          div.c {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            -ms-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+          }
+        </pre>
+        </li>
+        <li><a href="./day-5/que2.html">Click Here to see Output</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Q. Show implementation of grid</h2>
+      <ul>
+        <li><pre>
+          <span>HTML Code:-</span>
+          &lt;div class="container"&gt;
+          &lt;div class="item item-1"&gt;1&lt;/div&gt;
+          &lt;div class="item item-2"&gt;2&lt;/div&gt;
+          &lt;div class="item item-3"&gt;3&lt;/div&gt;
+          &lt;div class="item item-4"&gt;4&lt;/div&gt;
+          &lt;div class="item item-5"&gt;5&lt;/div&gt;
+          &lt;div class="item item-6"&gt;6&lt;/div&gt;
+          &lt;/div&gt;
+
+          <span>CSS Code:-</span>
+          .container {
+            display: grid;
+            grid-template-columns: 250px 100px 150px;
+            grid-template-rows: 100px 100px;
+            grid-gap: 10px;
+            text-align: center;
+            justify-content: center;
+          }
+          .item {
+            background-color: rgba(18, 203, 28, 0.863);
+            border: 1px solid rgb(23, 19, 19);
+          }
+          .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+          }
+          .item3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+          }
+          .item4 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+          }
+        </pre></li>
+        <li><a href="./day-5/que3.html">Click Here to see Output</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Q.What are CSS combinators</h2>
+      <ul>
+        <li>Combinators combine the selectors to provide them a useful relationship and the
+          position of content in the document. This comes in handy when you want to style
+          certain elements all at once rather than styling elements individually. CSS
+          combinator selectors are as follows.</li>
+          <ol>
+            <li>Descendant Selector (space)</li>
+            <li>Child Selector (>)</li>
+            <li>Adjacent Sibling Selector (+)</li>
+            <li>General Sibling Selector (~)</li>
+          </ol>
+        <li><span>Descendant Selector :</span>The descendant selector matches all elements that are
+          descendants of a specified element</li>
+        <li><span>Child Selector :</span>The child selector will only affect elements under a direct
+          parent. A good way to remember this is that a child will only listen to its direct
+          parents.</li>
+        <li><span>Adjacent Sibling Selector :</span>To use the adjacent sibling selector in your CSS
+          stylesheet, you simply need the plus (+) sign. The adjacent sibling selector is used
+          to select an element that is directly after another specific element.</li>
+        <li><span>General Sibling Selectors:</span>The general sibling selector follows through on all
+          elements under the targeted HTML element selected. This means that if another
+          element tag interrupts the direct adjacent flow, the style rules can still follow
+          through.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Q.What are pseudo selectors in CSS</h2>
+      <ul>
+        <li>CSS pseudo-classes are used to add styles to selectors, but only when those
+          selectors meet certain conditions. A pseudo class is expressed by adding a colon (:)
+          after a selector in CSS, followed by a pseudo-class such as "hover", "focus", or
+          "active", like this:-</li>
+          <pre>
+            a:hover {
+              /*add your style here */
+              }
+          </pre>
+        <li><span>:active -</span> It is used to add style to an active element.</li>
+        <li><span>:hover -</span> It adds special effects to an element when the user moves the
+          mouse pointer over the element.</li>
+        <li><span>:link -</span> It adds style to the unvisited link.</li>
+        <li><span>:visited -</span> It adds style to a visited link.</li>
+        <li><span>:lang -</span> It is used to define a language to use in a specified element.</li>
+        <li><span>:focus -</span> It selects the element which is focused by the user currently.</li>
+        <li><span>:first-child -</span> It adds special effects to an element, which is the first child of
+          another element.</li>
+      </ul>
+    </div>
+  </body>
+</html>

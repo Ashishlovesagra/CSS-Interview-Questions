@@ -29,7 +29,39 @@
     <div class="box">
         <h2>Q.Write code to show any animation example</h2>
         <ul>
-            <li></li>
+            <li>By using animation property we can add some cool transitions and animations to
+                the element. To use animation, you must define keyframes for the animation.
+                Below example will change the box color in every 0.25seconds starting from red
+                till green.</li>
+            <li><pre>
+                <span>HTML Code:-</span>
+                &lt;div class="animation"&gt;&lt;/div&gt;
+
+                <span>CSS Code:-</span>
+                .animation {
+                    width: 200px;
+                    height: 200px;
+                    background-color: red;
+                    animation-name: Ashish;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                  }
+                  @keyframes Ashish {
+                    0% {
+                      background-color: red;
+                    }
+                    25% {
+                      background-color: yellow;
+                    }
+                    50% {
+                      background-color: blue;
+                    }
+                    100% {
+                      background-color: green;
+                    }
+                  }
+            </pre></li>
+        <li><a href="./Day-2/Que3.html">Click Here to see Output</a></li>
         </ul>
     </div>
     <div class="box">
@@ -46,13 +78,18 @@
     <div class="box">
         <h2>Q.Which property you will use to merge cells vertically in grid?</h2>
         <ul>
-            <li>CSS grid-column property.</li>
+            <li>grid-column-start and grid-column-end property can be used to merge cells
+                vertically. It also has a shorthand i.e., grid-column: start/end. If you want to merge
+                two elements in row then we will have to use grid-row property inside the child
+                element. Remember these properties are applicable only to child elements not to
+                parent elements.</li>
         </ul>
     </div>
     <div class="box">
         <h2>Q.Which property you will use to merge cells horizontally in grid?</h2>
         <ul>
-            <li></li>
+            <li>grid-row-start and grid-row-end property can be used to merge cells horizontally. It
+                also has a shorthand i.e., grid-row: grid-row-start/grid-row-end;</li>
         </ul>
     </div>
     <div class="box">

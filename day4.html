@@ -14,6 +14,49 @@
         , with button below it
       </h2>
       <ul>
+        <li>
+          <pre>
+          <span>HTML Code:-</span>
+          &lt;nav class="nav"&gt;
+
+          &lt;/nav&gt;
+          &lt;div class="navbar color"&gt;
+          &lt;div class="content"&gt;
+          &lt;p class="size"&gt;
+                Ashish Singh &lt;br /&gt;
+          &lt;input type="button" value="Button" class="button" /&gt;
+          &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+
+          <span>CSS Code:-</span>
+          .navbar {
+            width: 100%;
+            height: 430px;
+            border: 2px solid black;
+            background-image: url(./bg-image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          p {
+            text-align: center;
+            justify-content: center;
+            margin-top: 170px;
+          }
+          .size {
+            font-size: 35px;
+            color: yellow;
+          }
+          .button {
+            width: 100px;
+            height: 35px;
+          }
+          .nav{
+            width: 100%;
+            height: 150px;
+          }
+        </pre>
+        </li>
         <li><a href="./day-4/que1.html">Click Here to see Output</a></li>
       </ul>
     </div>
@@ -23,6 +66,71 @@
         button
       </h2>
       <ul>
+        <li>
+          <pre>
+          <span>HTML Code:-</span>
+          &lt;div class="navbar bg" &gt;
+          &lt;div class="left"&gt;
+          &lt;div class="logo"&gt;&lt;img src="./logo.JPG" alt="" /&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="right"&gt;
+          &lt;div class="list"&gt;
+          &lt;ul&gt;
+          &lt;li&gt;&lt;a href=""&gt;HOME&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=""&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=""&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=""&gt;ASHISH&lt;a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+
+          <span>CSS Code:-</span>
+          body {
+            margin: 0;
+          }
+          .navbar {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .left {
+            width: 49%;
+            height: 100px;
+          }
+          .right {
+            width: 49.5%;
+            height: 100px;
+          }
+          .bg{
+            background-color: aqua;
+          }
+          .logo img {
+            width: 90px;
+            border-radius: 50%;
+          }
+          .logo {
+            position: absolute;
+            top: 13px;
+            left: 20px;
+          }
+          .list {
+            text-align: center;
+            position: absolute;
+            top: 10px;
+            left: 70%;
+          }
+          li {
+            list-style: none;
+            display: inline-block;
+            padding: 15px;
+          }
+          a {
+            text-decoration: none;
+          }
+        </pre>
+        </li>
         <li><a href="./day-4/que2.html">Click Here to see Output</a></li>
       </ul>
     </div>
@@ -32,21 +140,248 @@
         should be horizontally placed in web view and vertically in mobile view
       </h2>
       <ul>
+        <li><pre>
+          <span>HTML Code:-</span>
+          &lt;div class="mainbox3"&gt;
+          &lt;div class="box box1"&gt;&lt;/div&gt;
+          &lt;div class="box box2"&gt;&lt;/div&gt;
+          &lt;div class="box box3"&gt;&lt;/div&gt;
+          &lt;/div>
+
+          <span>CSS Code:-</span>
+          .mainbox3 {
+            height: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          }
+          .box {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+          }
+          .box1,
+          .box2,
+          .box3 {
+            background-color: yellowgreen;
+          }
+          @media screen and (min-width: 250px) and (max-width: 630px) {
+            .mainbox3 {
+              flex-direction: column;
+            }
+            .box1,
+            .box2,
+            .box3 {
+              margin-top: 50px;
+              background-color: aqua;
+            }
+          }
+          @media screen and (min-width: 630px) and (max-width: 1024px) {
+            .mainbox3 {
+              flex-direction: column;
+            }
+            .box1,
+            .box2,
+            .box3 {
+              margin-top: 70px;
+              background-color: red;
+            }
+          }
+        </pre></li>
         <li><a href="./day-4/que3.html">Click Here to see Output</a></li>
       </ul>
     </div>
     <div class="box">
       <h2>
         Q.Replicate the button on Masthead of PrepBytes, Change the background
-        color of button for mobile view and ipad
+        color of button for mobile view and ipad view
       </h2>
       <ul>
+        <li><pre>
+          <span>HTML Code:-</span>
+          &lt;nav class="nav"&gt;&lt;/nav&gt;
+          &lt;section class="masterhead"&gt;
+          &lt;div class="left"&gt;
+          &lt;div class="box"&gt;
+          &lt;p class="big"&gt;
+          &lt;span class="red"&gt;Start your journey of success&lt;/span&gt; &lt;br /&gt;
+            Personalised Coding Programs &lt;br /&gt;
+            to make coding easier for you
+            &lt;/p&gt;
+            &lt;br /&gt;
+            &lt;p class="small"&gt;Want to know how PrepBytes can help you?&lt;/p&gt;
+            &lt;br /&gt;
+            &lt;button class="btn"&gt;&lt;span class="btn-in"&gt;Know More&lt;/span&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="right"&gt;
+            &lt;/div&gt;
+            &lt;/section&gt;
+
+            <span>CSS Code:-</span>
+            * {
+              margin: 0;
+              padding: 0;
+            }
+            .nav {
+              width: 100%;
+              height: 80px;
+            }
+            .masterhead {
+              width: 100%;
+              height: 500px;
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .left {
+              width: 50%;
+              height: 500px;
+            }
+            .right {
+              width: 50%;
+              height: 500px;
+              position: relative;
+              top: 10%;
+              background-image: url(./bg-image.jpg);
+              background-size: cover;
+            }
+            .box {
+              width: 98%;
+              height: 380px;
+              text-align: center;
+              justify-content: center;
+              position: relative;
+              top: 20%;
+            }
+            .big {
+              font-size: 45px;
+            }
+            .red {
+              color: red;
+            }
+            .small {
+              font-size: 25px;
+              position: relative;
+            }
+            .btn {
+              width: 25%;
+              height: 40px;
+              background-color: #00a5ec;
+              border: 2px solid #00a5ec;
+              border-radius: 5px;
+              position: relative;
+              left: -20%;
+            }
+            .btn-in {
+              font-size: 20px;
+              color: white;
+            }
+            @media screen and (min-width:250px) and (max-width:500px) {
+              .masterhead{
+                  width: 100%;
+                  display: grid;
+              }
+              .big{
+                  font-size: 29px;
+              }
+              .small{
+                  font-size: 25px;
+                  margin-left: 40px;
+              }
+              .right{
+                  width: 100%;
+                  height: 200px;
+                  position: absolute;
+                  top: 10%;
+                  background-image: url(./bg-image.jpg);
+                  background-size: cover;
+              }
+              .left{
+                  position: absolute;
+                  top: 30%;
+                  width: 100%;
+              }
+              .btn{
+                  width: 150px;
+                  margin-left: 50px;
+                  background-color:aqua;
+                  border: 5px solid aqua;
+              }
+              .btn-in{
+                  color: black;
+              }
+            }
+            @media screen and (min-width:500px) and (max-width:1020px){
+              .masterhead{
+                  width: 100%;
+                  display: grid;
+              }
+              .big{
+                  font-size: 35px;
+              }
+              .small{
+                  font-size: 30px;
+                  margin-left: 80px;
+              }
+              .right{
+                  width: 100%;
+                  height: 320px;
+                  position: absolute;
+                  top: 10%;
+                  background-image: url(./bg-image.jpg);
+                  background-size: cover;
+              }
+              .left{
+                  position: absolute;
+                  top: 45%;
+                  width: 100%;
+              }
+              .btn{
+                  width: 150px;
+                  margin-left: 50px;
+                  background-color:yellow;
+                  border: 5px solid yellow;
+              }
+              .btn-in{
+                  color:red;
+              }
+            }
+        </pre></li>
         <li><a href="./day-4/que4.html">Click Here to see Output</a></li>
       </ul>
     </div>
     <div class="box">
       <h2>Q.Write code to show implementation of flex</h2>
       <ul>
+        <li><pre>
+        <span>HTML Code:-</span>
+        &lt;div class="mainbox"&gt;
+        &lt;div class="box box1"&gt;&lt;/div&gt;
+        &lt;div class="box box2"&gt;&lt;/div&gt;
+        &lt;div class="box box3"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        <span>CSS Code:-</span>
+        .nav{
+          width: 100%;
+          height: 100px;
+        }
+        .mainbox{
+          width: 100%;
+          height: 500px;
+          display: flex;
+          flex: content;
+        }
+        .box{
+          width: 200px;
+          height: 200px;
+          background-color: aqua;
+          margin: auto;
+          align-items: center;
+          justify-content: center;
+        }
+        </pre></li>
         <li><a href="./day-4/que5.html">Click Here to see Output</a></li>
       </ul>
     </div>
